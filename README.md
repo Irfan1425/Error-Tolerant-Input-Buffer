@@ -1,4 +1,6 @@
-# VLSI
+# Error Tolerant Input Buffer
+
+Software to use: Cadence Vituoso, Synopsys HSPICE.
 
 Design and Layout Implementation of an Error Tollerant Input Buffer [ETIB] in 65nm Technology - Cadence Virutoso.
 
