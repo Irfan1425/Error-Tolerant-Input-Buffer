@@ -1,0 +1,6 @@
+cUiSetViewStatus {nor3} {layout} {1}
+cUiSetViewStatus {nor3} {logical} {0}
+cUiSetViewStatus {nor3} {abstract.pin} {0}
+cUiSetViewStatus {nor3} {abstract.ext} {0}
+cUiSetViewStatus {nor3} {abstract} {0}
+cUiSetViewStatus {nor3} {abstract.ver} {0}

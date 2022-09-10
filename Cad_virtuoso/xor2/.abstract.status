@@ -1,0 +1,6 @@
+cUiSetViewStatus {xor2} {layout} {1}
+cUiSetViewStatus {xor2} {logical} {0}
+cUiSetViewStatus {xor2} {abstract.pin} {0}
+cUiSetViewStatus {xor2} {abstract.ext} {0}
+cUiSetViewStatus {xor2} {abstract} {0}
+cUiSetViewStatus {xor2} {abstract.ver} {0}

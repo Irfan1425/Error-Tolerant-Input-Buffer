@@ -1,0 +1,245 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MS3
+* Top Cell Name: fsm
+* View Name:     schematic
+* Netlisted on:  May  4 02:31:24 2022
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    nor2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor2 A B out
+*.PININFO A:I B:I out:O
+MMN1 out B gnd! gnd! nfet W=591n L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 PTWELL=0 
++ plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN0 out A gnd! gnd! nfet W=591n L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 PTWELL=0 
++ plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP1 out B net13 vdd! pfet W=4.454u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP0 net13 A vdd! vdd! pfet W=4.454u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    inv_1b
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_1b IN OUT
+*.PININFO IN:I OUT:O
+MMP0 OUT IN vdd! vdd! pfet W=2.904u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN0 OUT IN gnd! gnd! nfet W=1.32u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS
+* Cell Name:    or2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT or2 A B OUT
+*.PININFO A:I B:I OUT:O
+XI2 A B net4 / nor2
+XI3 net4 OUT / inv_1b
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    inv1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv1 CLK CLK_bar IN OUT
+*.PININFO CLK:I CLK_bar:I IN:I OUT:O
+MMP1 OUT CLK net011 vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP0 net011 IN vdd! vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN1 OUT CLK_bar net010 gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN0 net010 IN gnd! gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand2 A B out
+*.PININFO A:I B:I out:O
+MMP0 out A vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP1 out B vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN0 out A net16 gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN1 net16 B gnd! gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS
+* Cell Name:    DFF2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFF2 CLK D Q Q_BAR RST
+*.PININFO CLK:I D:I RST:I Q:O Q_BAR:O
+XI45 Q Q_BAR / inv_1b
+XI42 net012 Q / inv_1b
+XI43 CLK net6 / inv_1b
+XI40 net6 CLK net9 net8 / inv1
+XI39 CLK net6 D net9 / inv1
+XI44 RST net8 net012 / nand2
+.ENDS
+
+************************************************************************
+* Library Name: MS
+* Cell Name:    nand3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand3 A B C out
+*.PININFO A:I B:I C:I out:O
+MMP2 out C vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP1 out B vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP0 out A vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN2 net14 C gnd! gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN1 net15 B net14 gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN0 out A net15 gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS
+* Cell Name:    xor2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT xor2 B C out
+*.PININFO B:I C:I out:O
+MMN4 net27 C gnd! gnd! nfet W=1.32u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN1 out B net27 gnd! nfet W=1.32u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN0 out net27 B gnd! nfet W=1.32u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMP1 out B C vdd! pfet W=2.904u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 pccrit=0 
++ plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 panw1=0p 
++ panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p 
++ panw10=0p
+MMP0 out C B vdd! pfet W=2.904u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 pccrit=0 
++ plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 panw1=0p 
++ panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p 
++ panw10=0p
+MMP4 net27 C vdd! vdd! pfet W=2.904u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS
+* Cell Name:    and2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT and2 A B OUT
+*.PININFO A:I B:I OUT:O
+XI5 net1 OUT / inv_1b
+XI4 A B net1 / nand2
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    fsm
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT fsm CLK IN_READY OUT_READY OUT_READY_BAR RST
+*.PININFO CLK:I IN_READY:I RST:I OUT_READY:O OUT_READY_BAR:O
+XI32 IN_READY net14 net22 / or2
+XI21 CLK net23 net016 net15 RST / DFF2
+XI22 CLK net17 net011 net18 RST / DFF2
+XI23 CLK net24 net013 net19 RST / DFF2
+XI24 CLK net21 OUT_READY OUT_READY_BAR RST / DFF2
+XI31 net19 net18 net15 net14 / nand3
+XI28 net013 net12 net24 / xor2
+XI27 net011 net016 net17 / xor2
+XI26 net016 net22 net23 / xor2
+XI30 net12 net013 net21 / and2
+XI29 net016 net011 net12 / and2
+.ENDS
+

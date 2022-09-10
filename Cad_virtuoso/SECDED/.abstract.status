@@ -1,0 +1,6 @@
+cUiSetViewStatus {SECDED} {layout} {0}
+cUiSetViewStatus {SECDED} {logical} {0}
+cUiSetViewStatus {SECDED} {abstract.pin} {0}
+cUiSetViewStatus {SECDED} {abstract.ext} {0}
+cUiSetViewStatus {SECDED} {abstract} {0}
+cUiSetViewStatus {SECDED} {abstract.ver} {0}

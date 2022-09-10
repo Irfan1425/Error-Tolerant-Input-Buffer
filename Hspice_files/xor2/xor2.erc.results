@@ -1,0 +1,40 @@
+xor2 1000
+lvsres_vias_M1
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_M2
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_M3
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_M4
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_M5
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_M6
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_EA
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+lvsres_vias_LB
+0 0 1 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+check_symindp_vias
+0 0 3 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+Check for symindp without LB
+There is one or more vias missing between top and bottom metal levels
+check_symindp_vias_lb
+0 0 3 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+Check for symindp with LB
+There is one or more vias missing between top and bottom metal levels
+check_symindp_ctap_vias
+0 0 3 May  1 15:52:17 2022                                                      
+Rule File Pathname: /home/eng/i/ixm210022/cad/gf65/xor_LVS/_Calibre_LVS_rules_
+Check for symindp centertap vias
+Centertap vias are missing

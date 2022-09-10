@@ -1,0 +1,6 @@
+cUiSetViewStatus {mux} {layout} {1}
+cUiSetViewStatus {mux} {logical} {0}
+cUiSetViewStatus {mux} {abstract.pin} {0}
+cUiSetViewStatus {mux} {abstract.ext} {0}
+cUiSetViewStatus {mux} {abstract} {0}
+cUiSetViewStatus {mux} {abstract.ver} {0}

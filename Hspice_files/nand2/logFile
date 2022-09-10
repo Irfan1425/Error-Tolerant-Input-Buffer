@@ -1,0 +1,32 @@
+header
+"PSFversion" "1.00"
+"simulator" "HSPICE"
+"version" "L-2016.06-SP1-2 linux64"
+"rundate" "14:26:22 04/28/2022 "
+"runtitle" "* file: nand2.pex.netlist                                         "
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"nand2.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"nand2.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

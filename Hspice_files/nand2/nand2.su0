@@ -1,0 +1,19 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "HSPICE"
+"version" "L-2016.06-SP1-2 linux64"
+"rundate" "14:26:28 04/28/2022"
+"runtitle" "* file: nand2.pex.netlist                                                       "
+"runtype" "Summary Information"
+"op point time" "0.00"
+"op point iterations" "1"
+"transient time" "0.00"
+"transient iterations" "86"
+"total cpu time" "1.27"
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "invalid"
+"transient analysis" "complete"
+TRAILER
+END

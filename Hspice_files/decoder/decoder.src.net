@@ -1,0 +1,126 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MS3
+* Top Cell Name: decoder
+* View Name:     schematic
+* Netlisted on:  May  4 02:42:28 2022
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    inv_1b
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_1b IN OUT
+*.PININFO IN:I OUT:O
+MMP0 OUT IN vdd! vdd! pfet W=2.904u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN0 OUT IN gnd! gnd! nfet W=1.32u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    inv1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv1 CLK CLK_bar IN OUT
+*.PININFO CLK:I CLK_bar:I IN:I OUT:O
+MMP1 OUT CLK net011 vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP0 net011 IN vdd! vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN1 OUT CLK_bar net010 gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN0 net010 IN gnd! gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand2 A B out
+*.PININFO A:I B:I out:O
+MMP0 out A vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP1 out B vdd! vdd! pfet W=2.665u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN0 out A net16 gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN1 net16 B gnd! gnd! nfet W=2.45u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    DFF2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFF2 CLK D Q Q_BAR RST
+*.PININFO CLK:I D:I RST:I Q:O Q_BAR:O
+XI45 Q Q_BAR / inv_1b
+XI42 net012 Q / inv_1b
+XI43 CLK net6 / inv_1b
+XI40 net6 CLK net9 net8 / inv1
+XI39 CLK net6 D net9 / inv1
+XI44 RST net8 net012 / nand2
+.ENDS
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    decoder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT decoder CLK IN RST a0 a0_bar a1 a1_bar a2 a2_bar a3 a3_bar c0 c0_bar 
++ c1 c1_bar c2 c2_bar p p_bar
+*.PININFO CLK:I IN:I RST:I a0:O a0_bar:O a1:O a1_bar:O a2:O a2_bar:O a3:O 
+*.PININFO a3_bar:O c0:O c0_bar:O c1:O c1_bar:O c2:O c2_bar:O p:O p_bar:O
+XI24 CLK IN p p_bar RST / DFF2
+XI25 CLK p c0 c0_bar RST / DFF2
+XI26 CLK c0 c1 c1_bar RST / DFF2
+XI27 CLK c1 a0 a0_bar RST / DFF2
+XI28 CLK a0 c2 c2_bar RST / DFF2
+XI29 CLK c2 a1 a1_bar RST / DFF2
+XI30 CLK a1 a2 a2_bar RST / DFF2
+XI31 CLK a2 a3 a3_bar RST / DFF2
+.ENDS
+

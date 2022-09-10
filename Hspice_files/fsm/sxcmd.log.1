@@ -1,0 +1,77 @@
+### Custom WaveView ADV log file, revision L-2016.06-SP2-1 (build Jan 11, ) ###
+### created at 02:36:33 on Wed May  4 2022 (Linux AMD64) ###
+### Host Name: engnx06a.utdallas.edu   User ID: ixm210022   PID: 13263   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 30
+wv_resize_window CustomWaveView 1280 593
+wv_move_window CustomWaveView -10 19
+wv_resize_window CustomWaveView 800 400
+wv_resize_window CustomWaveView 1024 536
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 297 27
+wv_move_dialog FileDialog 297 26
+wv_move_dialog FileDialog 297 -38
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_select_list_item FileDialog.FileList fsm.tr0
+wv_dclick_list_item FileDialog.FileList fsm.tr0
+wv_expand_tree_item MainWindow.hierview {D0:fsm.tr0}
+wv_select_tree_item MainWindow.hierview {D0:fsm.tr0}
+wv_select_tree_item MainWindow.hierview {D0:fsm.tr0/toplevel}
+wv_select_list_item MainWindow.sigview v(clk)
+wv_dclick_list_item MainWindow.sigview v(clk)
+wv_select_list_item MainWindow.sigview v(in)
+wv_dclick_list_item MainWindow.sigview v(in)
+wv_select_list_item MainWindow.sigview v(in_ready)
+wv_dclick_list_item MainWindow.sigview v(in_ready)
+wv_select_list_item MainWindow.sigview v(out_ready)
+wv_dclick_list_item MainWindow.sigview v(out_ready)
+wv_select_toolbar_item {Print}
+wv_move_dialog PrintSetup 246 26
+wv_move_dialog PrintSetup 246 8
+wv_select_dialog PrintSetup
+wv_set_check PrintSetup.PrintToFile 1
+wv_press_button PrintSetup.PathBrowser
+wv_move_dialog FileDialog 307 158
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_press_button FileDialog.Up
+wv_press_button FileDialog.Up
+wv_press_button FileDialog.Up
+wv_press_button FileDialog.Up
+wv_horz_scroll FileDialog.FileList 376
+wv_close_dialog FileDialog
+wv_select_dialog PrintSetup
+wv_press_button PrintSetup.PathBrowser
+wv_move_dialog FileDialog 297 119
+wv_move_dialog FileDialog 297 120
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_horz_scroll FileDialog.FileList 135
+wv_select_list_item FileDialog.FileList cad
+wv_dclick_list_item FileDialog.FileList cad
+wv_horz_scroll FileDialog.FileList 0
+wv_select_list_item FileDialog.FileList milestone4
+wv_dclick_list_item FileDialog.FileList milestone4
+wv_set_text FileDialog.FileName {FSM_WV}
+wv_press_button FileDialog.Ok
+wv_select_dialog PrintSetup
+wv_press_button PrintSetup.Print
+wv_select_list_item MainWindow.sigview v(rst)
+wv_dclick_list_item MainWindow.sigview v(rst)
+wv_select_toolbar_item {Print}
+wv_move_dialog PrintSetup 246 26
+wv_move_dialog PrintSetup 246 8
+wv_select_dialog PrintSetup
+wv_press_button PrintSetup.Print
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_close_window CustomWaveView
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

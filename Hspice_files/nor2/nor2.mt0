@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='L-2016.06-SP1-2 linux64' PARAM_COUNT=0
+.TITLE '$nor2'
+ t_pdr            t_pdf            tdiff            delay           
+ area             iavg             energy           edp             
+ adp              aedp             temper           alter#          
+  1.420e-10        1.221e-10        1.991e-11        142.0070       
+  6.849e+06       -3.302e-06       -158.5170         2.251e+04      
+  9.726e+08        1.542e+11         25.0000        1               

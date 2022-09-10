@@ -1,0 +1,46 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MS3
+* Top Cell Name: inv1
+* View Name:     schematic
+* Netlisted on:  Apr 28 19:53:20 2022
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: MS3
+* Cell Name:    inv1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv1 IN OUT CLK CLK_bar
+*.PININFO CLK:I CLK_bar:I IN:I OUT:O
+MMP1 OUT CLK net011 vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMP0 net011 IN vdd! vdd! pfet W=3.312u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ pccrit=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 sa=160n sb=160n sd=0 p_vta=0 
++ panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p 
++ panw9=0p panw10=0p
+MMN1 OUT CLK_bar net010 gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+MMN0 net010 IN gnd! gnd! nfet W=1.44u L=60n M=1 NF=1 MPL=1 mSwitch=0 idg=0 
++ PTWELL=0 plnest=-1.0 plorient=-1.0 pld200=-1.0 pccrit=0 sa=160n sb=160n sd=0 
++ p_vta=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p 
++ panw8=0p panw9=0p panw10=0p
+.ENDS
+

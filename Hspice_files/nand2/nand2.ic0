@@ -1,0 +1,86 @@
+* "simulator" "HSPICE" 
+* "version" "L-2016.06-SP1-2 linux64"
+* "format" "HSP"
+* "rundate" "18:10:06 04/30/2022 "
+* "netlist" "nand2.sp "
+* "runtitle" "$example hspice setup file to choose wn wp for min area*delay for cout"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ out =   1.2000        
++ vdd! =   1.2000        
++ xi.n_gnd!_d0_noxref_pos =  40.4812p       
++ xi.n_vdd!_d0_noxref_neg =   1.2000        
++ xi.n_a_c_142_n = 120.9663p       
++ xi.n_a_c_146_n = 177.7053p       
++ xi.n_a_c_148_n = 113.7202p       
++ xi.n_a_c_150_n = 116.7865p       
++ xi.n_a_c_155_n =  71.4213f       
++ xi.n_a_c_160_n =   6.3290p       
++ xi.n_a_mmn0_g = 247.8135p       
++ xi.n_a_mmp0_g = 583.5594p       
++ xi.n_b_c_193_n =  92.4464p       
++ xi.n_b_c_195_n = 147.4363p       
++ xi.n_b_c_198_n =   4.9444p       
++ xi.n_b_c_206_n =  76.8361p       
++ xi.n_b_mmn1_g =  92.5591p       
++ xi.n_b_mmp1_g = 553.2905p       
++ xi.n_gnd!_c_77_n =   3.1806p       
++ xi.n_gnd!_c_79_n =  17.1205p       
++ xi.n_gnd!_mmn1_s =  82.4683p       
++ xi.n_out_c_10_p =   1.2000        
++ xi.n_out_c_16_p =   1.2000        
++ xi.n_out_c_1_p =   1.2000        
++ xi.n_out_c_3_p =   1.2000        
++ xi.n_out_c_5_p =   1.2000        
++ xi.n_out_c_6_p =   1.2000        
++ xi.n_out_c_7_p =   1.2000        
++ xi.n_out_c_8_p =   1.2000        
++ xi.n_out_mmn0_d =   1.2000        
++ xi.n_out_mmp0_d =   1.2000        
++ xi.n_vdd!_c_105_n =   1.2000        
++ xi.n_vdd!_c_107_n =   1.2000        
++ xi.n_vdd!_c_109_n =   1.2000        
++ xi.n_vdd!_mmp0_s =   1.2000        
++ xi.n_vdd!_mmp1_s =   1.2000        
++ xi.net16 =  98.5751m       
++ xi.x_pm_nand2%out.1 =   1.2000        
++ xi.x_pm_nand2%out.7 =   1.2000        
++ xi.x_pm_nand2%out.10 =   1.2000        
++ xi.x_pm_nand2%out.13 =   1.2000        
++ xi.x_pm_nand2%out.17 =   1.2000        
++ xi.x_pm_nand2%out.24 =   1.2000        
++ xi.x_pm_nand2%out.27 =   1.2000        
++ xi.x_pm_nand2%out.30 =   1.2000        
++ xi.x_pm_nand2%out.33 =   1.2000        
++ xi.x_pm_nand2%out.38 =   1.2000        
++ xi.x_pm_nand2%gnd!.4 = 417.7651f       
++ xi.x_pm_nand2%gnd!.9 =   4.3128p       
++ xi.x_pm_nand2%gnd!.14 =  26.2690p       
++ xi.x_pm_nand2%gnd!.17 =  31.9916p       
++ xi.x_pm_nand2%gnd!.20 =  34.7719p       
++ xi.x_pm_nand2%vdd!.2 =   1.2000        
++ xi.x_pm_nand2%vdd!.8 =   1.2000        
++ xi.x_pm_nand2%vdd!.11 =   1.2000        
++ xi.x_pm_nand2%vdd!.14 =   1.2000        
++ xi.x_pm_nand2%vdd!.17 =   1.2000        
++ xi.x_pm_nand2%vdd!.20 =   1.2000        
++ xi.x_pm_nand2%vdd!.22 =   1.2000        
++ xi.x_pm_nand2%vdd!.26 =   1.2000        
++ xi.x_pm_nand2%vdd!.32 =   1.2000        
++ xi.x_pm_nand2%vdd!.35 =   1.2000        
++ xi.x_pm_nand2%vdd!.38 =   1.2000        
++ xi.x_pm_nand2%vdd!.41 =   1.2000        
++ xi.x_pm_nand2%a.3 = 143.1753p       
++ xi.x_pm_nand2%a.5 = 131.6962p       
++ xi.x_pm_nand2%a.23 =  98.3520p       
++ xi.x_pm_nand2%b.3 =  92.4661p       
++ xi.x_pm_nand2%b.5 = 101.4273p       
++ xi.x_pm_nand2%b.14 =  55.7969f       
++ xi.x_pm_nand2%b.20 =  92.4441p       
+***   END: Saved Operating Point ***                     

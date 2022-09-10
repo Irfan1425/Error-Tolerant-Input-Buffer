@@ -1,0 +1,199 @@
+### Custom WaveView ADV log file, revision L-2016.06-SP2-1 (build Jan 11, ) ###
+### created at 15:21:33 on Mon May  2 2022 (Linux AMD64) ###
+### Host Name: engnx06a.utdallas.edu   User ID: ixm210022   PID: 28471   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 30
+wv_resize_window CustomWaveView 1280 593
+wv_move_window CustomWaveView -10 19
+wv_resize_window CustomWaveView 800 400
+wv_resize_window CustomWaveView 1280 593
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 10 38
+wv_move_dialog FileDialog 425 -9
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_press_button FileDialog.Up
+wv_select_list_item FileDialog.FileList final
+wv_dclick_list_item FileDialog.FileList final
+wv_select_list_item FileDialog.FileList final.tr0
+wv_dclick_list_item FileDialog.FileList final.tr0
+wv_expand_tree_item MainWindow.hierview {D0:final.tr0}
+wv_select_tree_item MainWindow.hierview {D0:final.tr0}
+wv_expand_tree_item MainWindow.hierview {D0:final.tr0/toplevel}
+wv_select_tree_item MainWindow.hierview {D0:final.tr0/toplevel}
+wv_select_list_item MainWindow.sigview clk
+wv_dclick_list_item MainWindow.sigview clk
+wv_horz_scroll MainWindow.sigview 105
+wv_select_list_item MainWindow.sigview in
+wv_dclick_list_item MainWindow.sigview in
+wv_select_list_item MainWindow.sigview in_ready
+wv_dclick_list_item MainWindow.sigview in_ready
+wv_horz_scroll MainWindow.sigview 0
+wv_select_list_item MainWindow.sigview a00
+wv_dclick_list_item MainWindow.sigview a00
+wv_select_list_item MainWindow.sigview a01
+wv_dclick_list_item MainWindow.sigview a01
+wv_select_list_item MainWindow.sigview a02
+wv_dclick_list_item MainWindow.sigview a02
+wv_select_list_item MainWindow.sigview a03
+wv_dclick_list_item MainWindow.sigview a03
+wv_horz_scroll MainWindow.sigview 52
+wv_horz_scroll MainWindow.sigview 124
+wv_select_list_item MainWindow.sigview out_ready
+wv_dclick_list_item MainWindow.sigview out_ready
+wv_horz_scroll MainWindow.sigview 0
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 138 30
+wv_zoom_x WV1.PANEL1:1 3.83124e-10 1.05742e-08
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 111 13
+wv_select_wv_item WV1.PANEL3:1.CURSOR1
+wv_drag_item_to WV1 596 148
+wv_move_wv_item WV1.PANEL3:1.CURSOR1 424 169
+wv_select_wv_item WV1.PANEL3:1.CURSOR1
+wv_drag_item_to WV1 426 169
+wv_move_wv_item WV1.PANEL3:1.CURSOR1 642 222
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 602 43
+wv_zoom_x WV1.PANEL1:1 5.46034e-09 6.54391e-09
+wv_select_wv_item WV1.PANEL4:1.CURSOR1
+wv_drag_item_to WV1 622 242
+wv_move_wv_item WV1.PANEL4:1.CURSOR1 635 239
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 79 14
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 66 11
+wv_select_wv_item WV1.PANEL5:1.CURSOR1
+wv_drag_item_to WV1 343 253
+wv_move_wv_item WV1.PANEL5:1.CURSOR1 311 250
+wv_release_wv_item WV1 224 474
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 79 17
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 70 16
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 84 15
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 262 29
+wv_zoom_x WV1.PANEL1:1 2.70632e-09 6.12045e-09
+wv_select_wv_item WV1.PANEL4:1.CURSOR1
+wv_drag_item_to WV1 673 229
+wv_move_wv_item WV1.PANEL4:1.CURSOR1 895 297
+wv_select_wv_item WV1.HSLIDER 1000 481
+wv_release_wv_item WV1 1000 481
+wv_release_wv_item WV1 1000 481
+wv_select_wv_item WV1.PANEL6:1.CURSOR1
+wv_drag_item_to WV1 490 318
+wv_move_wv_item WV1.PANEL6:1.CURSOR1 531 316
+wv_select_wv_item WV1.PANEL5:1.CURSOR1
+wv_drag_item_to WV1 529 297
+wv_move_wv_item WV1.PANEL5:1.CURSOR1 436 284
+wv_select_wv_item WV1.HSLIDER 998 485
+wv_release_wv_item WV1 998 485
+wv_select_wv_item WV1.HSLIDER 998 485
+wv_release_wv_item WV1 998 485
+wv_select_wv_item WV1.PANEL6:1.CURSOR1
+wv_drag_item_to WV1 198 337
+wv_move_wv_item WV1.PANEL6:1.CURSOR1 547 359
+wv_select_list_item MainWindow.sigview err
+wv_dclick_list_item MainWindow.sigview err
+wv_select_wv_item WV1.PANEL5:1.CURSOR1
+wv_drag_item_to WV1 543 265
+wv_move_wv_item WV1.PANEL5:1.CURSOR1 412 264
+wv_select_wv_item WV1.HSLIDER 996 487
+wv_release_wv_item WV1 996 487
+wv_select_wv_item WV1.HSLIDER 988 483
+wv_horz_scroll WV1 222
+wv_release_wv_item WV1 988 483
+wv_select_wv_item WV1.HSLIDER 1000 486
+wv_release_wv_item WV1 1000 486
+wv_release_wv_item WV1 999 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 1003 486
+wv_release_wv_item WV1 1003 486
+wv_select_wv_item WV1.HSLIDER 202 480
+wv_release_wv_item WV1 202 480
+wv_select_wv_item WV1.PANEL7:1.CURSOR1
+wv_drag_item_to WV1 198 340
+wv_move_wv_item WV1.PANEL7:1.CURSOR1 476 362
+wv_select_panel WV1.PANEL8:1 2.43822e-08 0.512163
+wv_drag_item_to WV1 485 385
+wv_press_key Esc
+wv_zoom_x WV1.PANEL8:1 2.43822e-08 2.4627e-08
+wv_press_key Esc
+wv_select_wv_item {WV1.ICON.unzoom y}
+wv_release_wv_item WV1 89 20
+wv_select_wv_item {WV1.ICON.unzoom x}
+wv_release_wv_item WV1 77 17
+wv_select_wv_item WV1.PANEL1:1.XAXIS1
+wv_drag_item_to WV1 755 35
+wv_zoom_x WV1.PANEL1:1 2.31078e-08 2.70632e-08
+wv_select_wv_item WV1.PANEL7:1.CURSOR1
+wv_drag_item_to WV1 456 327
+wv_move_wv_item WV1.PANEL7:1.CURSOR1 571 346
+wv_select_wv_item WV1.HSLIDER 999 486
+wv_release_wv_item WV1 999 486
+wv_select_wv_item WV1.HSLIDER 999 486
+wv_release_wv_item WV1 999 486
+wv_select_wv_item WV1.HSLIDER 203 488
+wv_release_wv_item WV1 203 488
+wv_select_wv_item WV1.PANEL8:1.CURSOR1
+wv_drag_item_to WV1 201 399
+wv_move_wv_item WV1.PANEL8:1.CURSOR1 666 443
+wv_select_wv_item WV1.HSLIDER 1001 485
+wv_release_wv_item WV1 1001 485
+wv_release_wv_item WV1 1001 485
+wv_select_wv_item WV1.HSLIDER 1001 485
+wv_release_wv_item WV1 1001 485
+wv_select_wv_item WV1.PANEL7:1.CURSOR1
+wv_drag_item_to WV1 198 350
+wv_move_wv_item WV1.PANEL7:1.CURSOR1 347 370
+wv_select_wv_item WV1.HSLIDER 202 488
+wv_release_wv_item WV1 202 488
+wv_release_wv_item WV1 202 488
+wv_select_wv_item WV1.PANEL8:1.CURSOR1
+wv_drag_item_to WV1 749 382
+wv_move_wv_item WV1.PANEL8:1.CURSOR1 750 406
+wv_select_wv_item WV1.HSLIDER 999 486
+wv_release_wv_item WV1 999 486
+wv_select_wv_item WV1.PANEL8:1.CURSOR1
+wv_drag_item_to WV1 346 394
+wv_move_wv_item WV1.PANEL8:1.CURSOR1 758 419
+wv_select_wv_item WV1.PANEL8:1.CURSOR1
+wv_drag_item_to WV1 759 402
+wv_move_wv_item WV1.PANEL8:1.CURSOR1 656 394
+wv_select_wv_item WV1.HSLIDER 199 486
+wv_release_wv_item WV1 199 486
+wv_release_wv_item WV1 199 486
+wv_select_wv_item WV1.VSLIDER 1006 358
+wv_vert_scroll WV1 0
+wv_select_wv_item WV1.PANEL7:1.CURSOR1
+wv_drag_item_to WV1 1003 357
+wv_move_wv_item WV1.PANEL7:1.CURSOR1 626 370
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 548 276
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='L-2016.06-SP1-2 linux64' PARAM_COUNT=0
+.TITLE '$or2'
+ t_pdr            t_pdf            tdiff            delay           
+ area             iavg             energy           edp             
+ adp              aedp             temper           alter#          
+  1.266e-10        1.413e-10        1.471e-11        141.3323       
+  1.116e+07       -3.595e-06       -172.5454         2.439e+04      
+  1.577e+09        2.722e+11         25.0000        1               

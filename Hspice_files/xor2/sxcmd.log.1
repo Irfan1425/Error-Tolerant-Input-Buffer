@@ -1,0 +1,36 @@
+### Custom WaveView ADV log file, revision L-2016.06-SP2-1 (build Jan 11, ) ###
+### created at 15:54:55 on Sun May  1 2022 (Linux AMD64) ###
+### Host Name: engnx06a.utdallas.edu   User ID: ixm210022   PID: 7880   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 30
+wv_resize_window CustomWaveView 1280 593
+wv_move_window CustomWaveView -10 19
+wv_resize_window CustomWaveView 800 400
+wv_resize_window CustomWaveView 1280 593
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 10 38
+wv_move_dialog FileDialog 425 -9
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_horz_scroll FileDialog.FileList 256
+wv_select_list_item FileDialog.FileList xor2_1.tr0
+wv_dclick_list_item FileDialog.FileList xor2_1.tr0
+wv_expand_tree_item MainWindow.hierview {D0:xor2_1.tr0}
+wv_select_tree_item MainWindow.hierview {D0:xor2_1.tr0}
+wv_select_tree_item MainWindow.hierview {D0:xor2_1.tr0/toplevel}
+wv_select_list_item MainWindow.sigview v(b)
+wv_dclick_list_item MainWindow.sigview v(b)
+wv_select_list_item MainWindow.sigview v(c)
+wv_dclick_list_item MainWindow.sigview v(c)
+wv_select_list_item MainWindow.sigview v(out)
+wv_dclick_list_item MainWindow.sigview v(out)
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 548 276
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

@@ -1,0 +1,80 @@
+* "simulator" "HSPICE" 
+* "version" "L-2016.06-SP1-2 linux64"
+* "format" "HSP"
+* "rundate" "15:45:11 04/29/2022 "
+* "netlist" "nor2.sp "
+* "runtitle" "$nor2"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ out =   1.2000        
++ vdd! =   1.2000        
++ xi.n_gnd!_d0_noxref_pos =  36.6107p       
++ xi.n_vdd!_d0_noxref_neg =   1.2000        
++ xi.n_a_c_146_n = 162.2400p       
++ xi.n_a_c_150_n = 254.1802p       
++ xi.n_a_c_155_n =   8.5529p       
++ xi.n_a_c_165_n = 134.3301p       
++ xi.n_a_mmn0_g = 175.0443p       
++ xi.n_a_mmp0_g =   1.3961n       
++ xi.n_b_c_201_n = 162.2430p       
++ xi.n_b_c_207_n =   8.5530p       
++ xi.n_b_c_209_n = 134.3326p       
++ xi.n_b_c_221_n = 254.1850p       
++ xi.n_b_mmn1_g = 175.0473p       
++ xi.n_b_mmp1_g =   1.3961n       
++ xi.n_gnd!_c_77_n =  86.8661f       
++ xi.n_gnd!_c_81_n = 111.6481p       
++ xi.n_gnd!_mmn0_s =   2.1150n       
++ xi.n_out_c_1_p =   1.2000        
++ xi.n_out_c_28_p =   1.2000        
++ xi.n_out_c_29_p =   1.2000        
++ xi.n_out_c_2_p =   1.2000        
++ xi.n_out_c_3_p =   1.2000        
++ xi.n_out_c_4_p =   1.2000        
++ xi.n_out_c_5_p =   1.2000        
++ xi.n_out_c_6_p =   1.2000        
++ xi.n_out_c_7_p =   1.2000        
++ xi.n_out_mmn0_d =   1.2000        
++ xi.n_out_mmn1_d =   1.2000        
++ xi.n_out_mmp0_d =   1.2000        
++ xi.n_vdd!_c_122_n =   1.2000        
++ xi.n_vdd!_c_124_n =   1.2000        
++ xi.n_vdd!_mmp1_s =   1.2000        
++ xi.net13 =   1.2000        
++ xi.x_pm_nor2%out.1 =   1.2000        
++ xi.x_pm_nor2%out.6 =   1.2000        
++ xi.x_pm_nor2%out.13 =   1.2000        
++ xi.x_pm_nor2%out.16 =   1.2000        
++ xi.x_pm_nor2%out.19 =   1.2000        
++ xi.x_pm_nor2%out.22 =   1.2000        
++ xi.x_pm_nor2%out.25 =   1.2000        
++ xi.x_pm_nor2%out.28 =   1.2000        
++ xi.x_pm_nor2%out.31 =   1.2000        
++ xi.x_pm_nor2%out.35 =   1.2000        
++ xi.x_pm_nor2%out.36 =   1.2000        
++ xi.x_pm_nor2%out.43 =   1.2000        
++ xi.x_pm_nor2%out.47 =   1.2000        
++ xi.x_pm_nor2%gnd!.4 = 245.8465f       
++ xi.x_pm_nor2%gnd!.7 =   4.4096p       
++ xi.x_pm_nor2%vdd!.4 =   1.2000        
++ xi.x_pm_nor2%vdd!.9 =   1.2000        
++ xi.x_pm_nor2%vdd!.15 =   1.2000        
++ xi.x_pm_nor2%vdd!.18 =   1.2000        
++ xi.x_pm_nor2%vdd!.21 =   1.2000        
++ xi.x_pm_nor2%vdd!.24 =   1.2000        
++ xi.x_pm_nor2%vdd!.27 =   1.2000        
++ xi.x_pm_nor2%vdd!.30 =   1.2000        
++ xi.x_pm_nor2%vdd!.33 =   1.2000        
++ xi.x_pm_nor2%a.3 = 168.9898p       
++ xi.x_pm_nor2%a.5 = 176.7542p       
++ xi.x_pm_nor2%a.19 = 161.6369p       
++ xi.x_pm_nor2%b.3 = 168.9929p       
++ xi.x_pm_nor2%b.5 = 176.7575p       
++ xi.x_pm_nor2%b.19 = 161.6399p       
+***   END: Saved Operating Point ***                     

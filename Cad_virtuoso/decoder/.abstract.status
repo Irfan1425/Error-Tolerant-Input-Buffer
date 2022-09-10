@@ -1,0 +1,6 @@
+cUiSetViewStatus {decoder} {layout} {0}
+cUiSetViewStatus {decoder} {logical} {0}
+cUiSetViewStatus {decoder} {abstract.pin} {0}
+cUiSetViewStatus {decoder} {abstract.ext} {0}
+cUiSetViewStatus {decoder} {abstract} {0}
+cUiSetViewStatus {decoder} {abstract.ver} {0}

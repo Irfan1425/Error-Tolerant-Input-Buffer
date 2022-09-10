@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='L-2016.06-SP1-2 linux64' PARAM_COUNT=0
+.TITLE '$example hspice setup file to choose wn wp for min area*delay for cout=100ff'
+ area             t_pdr            t_pdf            delay           
+ tdiff            iavg             energy           edp             
+ adp              aedp             temper           alter#          
+  6.165e+06        8.671e-11        8.572e-11         86.7143       
+  9.915e-13       -2.050e-06        -98.4165         8.534e+03      
+  5.346e+08        5.261e+10         25.0000        1               
